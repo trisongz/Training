@@ -15,7 +15,7 @@ from accumulate import AccumulatingOptimizer
 
 CHECKPOINT_DIR = 'checkpoint'
 SAMPLE_DIR = 'samples'
-GDRIVE_DIR = GPTOut
+GDRIVE_DIR = 'GPTOut'
 
 parser = argparse.ArgumentParser(
     description='Fine-tune GPT-2 on your custom dataset.',
