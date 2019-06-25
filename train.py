@@ -15,7 +15,7 @@ from accumulate import AccumulatingOptimizer
 
 CHECKPOINT_DIR = 'checkpoint'
 SAMPLE_DIR = 'samples'
-GDRIVE_DIR = 'GPTModels'('input the google drive folder name the checkpoint folder will be in - if nothing, type nothing at all.')
+GDRIVE_DIR = '/content/drive/My Drive/GPTOut'('input the google drive folder name the checkpoint folder will be in - if nothing, type nothing at all.')
 
 parser = argparse.ArgumentParser(
     description='Fine-tune GPT-2 on your custom dataset.',
