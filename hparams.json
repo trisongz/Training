@@ -1,6 +1,6 @@
 {
     "n_head": 16,
-    "encoder_path": "/content/GPT2-Reset/encoder",
+    "encoder_path": "/content/Main/GPT2-Reset/encoder",
     "n_vocab": 50257,
     "embed_dropout": 0.0,
     "lr": 0.00025,
@@ -15,7 +15,7 @@
     "train_steps": 10000,
     "eval_steps": 10,
     "max_steps": 604800,
-    "data_path": "/content/GPT2-Reset/out",
+    "data_path": "/content/Main/GPT2-Reset/out",
     "scale": 0.14433756729740646,
     "res_dropout": 0.1,
     "predict_batch_size": 1,
@@ -24,7 +24,7 @@
     "n_embd": 1024,
     "input": "openwebtext",
     "model": "GPT2",
-    "model_path": "/content/GPT2-Reset/PrettyBig",
+    "model_path": "/content/Main/GPT2-Reset/PrettyBig",
     "n_ctx": 1024,
     "predict_path": "logs/predictions_SortaBig.txt",
     "n_layer": 25
