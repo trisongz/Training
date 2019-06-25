@@ -12,7 +12,7 @@ def openwebtext(params, eval=False, batch=True):
                 65, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86, 87, 88, 89, 90, 91, 92]
     else:
         numbers = [1, 2, 11, 12, 16, 34, 36, 58, 60, 61, 62, 67, 83]
-    files = [os.path.join(params["data_path"], "openwebtext-newspaper_{}.tfrecords".format(str(i))) for i in numbers]
+    files = [os.path.join(params["data_path"], "tfiles_{}.tfrecords".format(str(i))) for i in numbers]
 
     return bpe_text(params["batch_size"], files, amount=params["n_ctx"], iterations=params["iterations"], stitch=42, batch=batch)
 
@@ -24,7 +24,7 @@ def openwebtext_long(params, eval=False, batch=True):
                 65, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 84, 85, 86, 87, 88, 89, 90, 91, 92]
     else:
         numbers = [1, 2, 11, 12, 16, 34, 36, 58, 60, 61, 62, 67, 83]
-    files = [os.path.join(params["data_path"], "openwebtext-newspaper-long_{}.tfrecords".format(str(i))) for i in numbers]
+    files = [os.path.join(params["data_path"], "tfiles_{}.tfrecords".format(str(i))) for i in numbers]
 
     return bpe_text(params["batch_size"], files, amount=params["n_ctx"], iterations=params["iterations"], stitch=2, batch=batch)
 

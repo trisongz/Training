@@ -10,14 +10,14 @@ from tqdm import tqdm
 
 import encoder
 
-base_dir = "/home/connor/2/newspaper" # Path to where your .txt files are located
+base_dir = "/content" # Path to where your .txt files are located
 files_per = 175000 # 175000 ~ 200-300MB
-name = "openwebtext-newspaper" # Name of output files will be name_i.tfrecords where i is the number of the file
-output_dir = "/home/connor/out"
+name = "tfiles" # Name of output files will be name_i.tfrecords where i is the number of the file
+output_dir = "/content/GPT2-Reset/out"
 log_dir = "logs"
 files = glob.glob(os.path.join(base_dir, "**/*.txt"))
 processes = 64 # Number of encoding processes to run
-encoder_path = "gs://openwebtext/stuff/encoder" # Path to encoder files
+encoder_path = "/content/GPT2-Reset/encoder" # Path to encoder files
 
 def _int64_feature(value):
     """Returns an int64_list from a bool / enum / int / uint."""
